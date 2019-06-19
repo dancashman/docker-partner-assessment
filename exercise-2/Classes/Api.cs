@@ -14,8 +14,8 @@ namespace exercise_2.Classes
         {
             using (HttpClient client = new HttpClient())
             {
-                    client.BaseAddress = new Uri ("http://localhost:5000");
-                    
+                    client.BaseAddress = new Uri ("http://exercise2_exercise1:80");
+
                     MediaTypeWithQualityHeaderValue contentType = new MediaTypeWithQualityHeaderValue("application/json");
                     
                     client.DefaultRequestHeaders.Accept.Add(contentType);
